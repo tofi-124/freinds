@@ -11,33 +11,29 @@
     </div>
   <% end %>
  
- 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name, id: :freind_first_name %>
-  </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name, id: :freind_last_name %>
+  <div class="field form-group">
+    <%= form.text_field :first_name, id: :freind_first_name, class:"form-control", placeholder:"First Name" %>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email, id: :freind_email %>
+<br/>
+  <div class="field form-group">   
+    <%= form.text_field :last_name, id: :freind_last_name, class:"form-control", placeholder:"Last Name" %>
   </div>
-
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone, id: :freind_phone %>
+<br/>
+  <div class="field form-group">   
+    <%= form.text_field :email, id: :freind_email, class:"form-control", placeholder:"Email" %>
   </div>
-
-  <div class="field">
-    <%= form.label :insta %>
-    <%= form.text_field :insta, id: :freind_insta %>
+<br/>
+  <div class="field form-group">
+    <%= form.text_field :phone, id: :freind_phone, class:"form-control", placeholder:"Phone" %>
   </div>
+<br/>
+  <div class="field form-group">
+    <%= form.text_field :insta, id: :freind_insta, class:"form-control", placeholder:"Insta Handle" %>
+  </div>
+<br/>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-secondary"%>
   </div>
 <% end %>
